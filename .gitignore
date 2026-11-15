@@ -1,0 +1,28 @@
+# .NET
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Visual Studio / Rider / VS Code
+.vs/
+.idea/
+.vscode/*
+!.vscode/extensions.json
+
+# Environment & Secrets
+.env
+appsettings.Development.json
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Test Results
+[Tt]est[Rr]esult*/
+coverage/
