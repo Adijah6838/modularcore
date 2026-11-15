@@ -1,0 +1,16 @@
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: modularcore-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: mcuser
+      POSTGRES_PASSWORD: mcpassword
+      POSTGRES_DB: modularcore
+    ports:
+      - "5435:5432"
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+
+volumes:
+  postgres-data:
